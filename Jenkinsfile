@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Git Checkout') {
+    stage('') {
       steps {
-        build(job: 'checkout', quietPeriod: 2, wait: true)
         echo 'this is test job 1'
+        echo 'this is stage 1'
       }
     }
   }
